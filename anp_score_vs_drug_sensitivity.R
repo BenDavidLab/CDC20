@@ -60,6 +60,9 @@ cell_line_data <- merge(cell_line_data, aneuploidy_data, by = 'DepMap_ID', all =
 
 ###get partial correlation####
 gene = 'CDC20'
+if (!dir.exists('results/')) {
+  dir.create('results/')
+}
 for(treatment_name in drugs){
   treatments_and_exp  <- dplyr::select(cell_line_data, DepMap_ID, num_arm_events, any_of(c(gene, treatment_name))) %>% na.omit() 
   colnames(treatments_and_exp)[colnames(treatments_and_exp) == treatment_name] <- 'treatment'
