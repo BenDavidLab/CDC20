@@ -10,5 +10,5 @@ Code for the "CDC20 determines the sensitivity to MPS1 inhibitors" paper.
 
 **For figure F2B and supplementary 3A:**
   1. Download primary-screen-replicate-collapsed-logfold-change.csv from epMap Public 23Q2 to data/ dir.
-  2.  Donwload CCLE_expression.csv from[ DepMap Public 20Q4 Files ]([url](https://depmap.org/portal/data_page/?tab=allData&releasename=DepMap+Public+20Q4&filename=CCLE_expression.csv)) to data/ dir.
+  2. Donwload CCLE_expression.csv from DepMap Public 22Q2 Files to data/ dir.
   3.  Run anp_score_vs_drug_sensitivity.R script.
